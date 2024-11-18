@@ -55,6 +55,10 @@ final class CarsOwnersList extends PowerGridComponent
                 ->searchable()
                 ->sortable(),
 
+            Column::make('CNPJ', 'document')
+                ->searchable()
+                ->sortable(),
+
             Column::make('E-mail', 'email')
                 ->sortable(),
 

@@ -55,6 +55,10 @@ final class StoresList extends PowerGridComponent
             Column::make('Name', 'name')
                 ->searchable()
                 ->sortable(),
+                
+            Column::make('CNPJ', 'document')
+            ->searchable()
+            ->sortable(),
 
             Column::make('E-mail', 'email')
                 ->sortable(),
