@@ -82,6 +82,7 @@
             @endif
             
             <x-mary-menu-item title="Entregas" link="{{ route('delivery.index') }}" exact/>
+            <x-mary-menu-item title="Ocorrências" link="{{ route('occurencies.index') }}" exact/>
             {{-- Theme toggle --}}
             <x-mary-theme-toggle class="btn btn-circle" />
         </x-mary-menu>

@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Store;
 use App\Models\User;
-use Illuminate\Support\Carbon;
+use ;
 use Illuminate\Support\Collection;
 use PowerComponents\LivewirePowerGrid\Button;
 use PowerComponents\LivewirePowerGrid\Column;
@@ -63,7 +63,7 @@ final class StoresList extends PowerGridComponent
             Column::make('E-mail', 'email')
                 ->sortable(),
 
-            Column::make('Created', 'created_at_formatted'),
+            Column::make('Data criação', 'created_at_formatted'),
 
             Column::action('Action')
         ];

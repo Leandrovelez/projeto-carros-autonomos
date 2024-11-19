@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DeliverySeeder::class);
         $this->call(GaragesSeeder::class);
         $this->call(ColletionPointsSeeder::class);
+        $this->call(OccurencieSeeder::class);
 
         DB::table('users')->truncate();
 
