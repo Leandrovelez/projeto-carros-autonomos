@@ -10,6 +10,7 @@ use App\Livewire\Garages;
 use App\Livewire\GaragesForm;
 use App\Livewire\Stores;
 use App\Livewire\StoresForm;
+use App\Livewire\TrackCar;
 use App\Livewire\TrackDelivery;
 use App\Livewire\Warehouses;
 use App\Livewire\WarehousesForm;
@@ -48,6 +49,7 @@ Route::group(['prefix' => 'warehouses'], function() {
 Route::group(['prefix' => 'cars'], function() {
     Route::get('/', Cars::class)->name('cars.index');
     Route::get('/create', CarsForm::class)->name('cars.create');
+    Route::get('/track/{id}', TrackCar::class)->name('cars.track');
 })->middleware(['auth']);
 
 Route::group(['prefix' => 'delivery'], function() {

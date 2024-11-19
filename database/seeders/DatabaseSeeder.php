@@ -28,6 +28,13 @@ class DatabaseSeeder extends Seeder
             'tipo' => 'admin',
             'password' => bcrypt('leandrovelez55@gmail.com')
         ]);
+        
+        User::factory()->create([
+            'name' => 'Admin',
+            'email' => 'admin@email.com',
+            'tipo' => 'vendedor',
+            'password' => bcrypt('@Admin11')
+        ]);
 
         User::factory()->create([
             'name' => 'Huguinho',

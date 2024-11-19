@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
-                "reference": "a7c377a4ef88cd54712e3e15cbed30446820da0b"
+                "reference": "4ed3ed08e9ac192d0d126b2f12711d6fb6576a48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/a7c377a4ef88cd54712e3e15cbed30446820da0b",
-                "reference": "a7c377a4ef88cd54712e3e15cbed30446820da0b",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/4ed3ed08e9ac192d0d126b2f12711d6fb6576a48",
+                "reference": "4ed3ed08e9ac192d0d126b2f12711d6fb6576a48",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
             ],
             "support": {
                 "issues": "https://github.com/blade-ui-kit/blade-heroicons/issues",
-                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/2.4.0"
+                "source": "https://github.com/blade-ui-kit/blade-heroicons/tree/2.5.0"
             },
             "funding": [
                 {
@@ -73,7 +73,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2024-07-16T07:00:01+00:00"
+            "time": "2024-11-18T19:59:07+00:00"
         },
         {
             "name": "blade-ui-kit/blade-icons",
@@ -3000,16 +3000,16 @@
         },
         {
             "name": "power-components/livewire-powergrid",
-            "version": "v6.1.4",
+            "version": "v6.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Power-Components/livewire-powergrid.git",
-                "reference": "ac29ea82e6881cae268a74027f8c3018882a0b47"
+                "reference": "941cf2572e507c53191d5da835b37e457329f27c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Power-Components/livewire-powergrid/zipball/ac29ea82e6881cae268a74027f8c3018882a0b47",
-                "reference": "ac29ea82e6881cae268a74027f8c3018882a0b47",
+                "url": "https://api.github.com/repos/Power-Components/livewire-powergrid/zipball/941cf2572e507c53191d5da835b37e457329f27c",
+                "reference": "941cf2572e507c53191d5da835b37e457329f27c",
                 "shasum": ""
             },
             "require": {
@@ -3067,7 +3067,7 @@
             "homepage": "https://github.com/power-components/livewire-powergrid",
             "support": {
                 "issues": "https://github.com/Power-Components/livewire-powergrid/issues",
-                "source": "https://github.com/Power-Components/livewire-powergrid/tree/v6.1.4"
+                "source": "https://github.com/Power-Components/livewire-powergrid/tree/v6.1.5"
             },
             "funding": [
                 {
@@ -3075,7 +3075,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-15T12:38:57+00:00"
+            "time": "2024-11-18T19:52:42+00:00"
         },
         {
             "name": "psr/clock",
