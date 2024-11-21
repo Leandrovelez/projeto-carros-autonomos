@@ -42,9 +42,13 @@
         </div>
         
         <div class="w-2/3 pl-4">
-            <img src="{{ asset('images/maps.png') }}" alt="" class="rounded" width="100%" height="100%">
+        <x-mary-card class="dark:bg-slate-900">
+            <x-mary-header title="Local da ocorrência" subtitle="" separator />
+            <div class=" flex justify-center">
+                <img src="{{ asset('images/maps.png') }}" alt="" class="rounded" width="100%" height="100%">
+            </div>
+        </x-mary-card>
         </div>
-        
     </div>
     <div class="container mx-auto px-4 flex justify-between">
         
