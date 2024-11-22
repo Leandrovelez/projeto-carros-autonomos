@@ -27,7 +27,7 @@ class OccurencieSeeder extends Seeder
         Occurencie::create([
             'endereco' => 'rua dos teste, 220, São Caetano - SP',
             'tipo' => 'Falha no compartimento',
-            'entrega_id' => 2,
+            'entrega_id' => 5,
             'created_at' => now(),
             'updated_at' => now(),
         ]);

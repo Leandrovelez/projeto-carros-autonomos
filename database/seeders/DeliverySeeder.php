@@ -22,6 +22,8 @@ class DeliverySeeder extends Seeder
             "nome_destinatario" => "Huguinho",
             "garagem_id" => 1,
             "armazem_id" => 1,
+            "compartimento" => 1,
+            "tentativa" => 3
         ]);
 
         Delivery::create([
@@ -30,6 +32,8 @@ class DeliverySeeder extends Seeder
             "nome_destinatario" => "Zezinho",
             "garagem_id" => 2,
             "armazem_id" => 1,
+            "compartimento" => 2,
+            "tentativa" => 2
         ]);
 
         Delivery::create([
@@ -38,6 +42,28 @@ class DeliverySeeder extends Seeder
             "nome_destinatario" => "Luizinho",
             "garagem_id" => 2,
             "armazem_id" => 1,
+            "compartimento" => 5,
+            "tentativa" => 1
+        ]);
+        
+        Delivery::create([
+            "endereco_entrega" => "Minha rua, 75, Diadema - SP",
+            "status" => "Entregue",
+            "nome_destinatario" => "Duck Dodgers",
+            "garagem_id" => 3,
+            "armazem_id" => 2,
+            "compartimento" => 3,
+            "tentativa" => 2
+        ]);
+        
+        Delivery::create([
+            "endereco_entrega" => "Minha rua, 75, Diadema - SP",
+            "status" => "Falha",
+            "nome_destinatario" => "Duck Dodgers",
+            "garagem_id" => 3,
+            "armazem_id" => 2,
+            "compartimento" => 7,
+            "tentativa" => 1
         ]);
     }
 }

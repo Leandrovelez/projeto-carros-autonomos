@@ -17,8 +17,10 @@ return new class extends Migration
             $table->string('nome_destinatario', 250);
             $table->integer('garagem_id');
             $table->integer('armazem_id');
-            $table->string('status', 250);
+            $table->string('status', 32);
             $table->string('comentario', 250)->nullable();
+            $table->integer('compartimento');
+            $table->integer('tentativa')->nullable();
             $table->timestamps();
         });
     }
