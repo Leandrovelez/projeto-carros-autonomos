@@ -10,4 +10,23 @@
     </x-mary-card>
     <x-mary-icon hidden name="o-pencil-square" class=" hidden size-6 bg-blue-500 dark:bg-blue-800 hover:bg-blue-700 text-white dark:text-black" title="Excluir" />
     <x-mary-icon hidden name="o-pencil-square" class=" hidden size-6 bg-red-500 dark:bg-red-800 hover:bg-red-700 text-white dark:text-black" title="Excluir" />
+
+    <!-- <x-mary-card class="dark:bg-slate-900">
+        @php
+        
+            $headers = [
+                ['key' => 'nome', 'label' => 'Nome'],
+                ['key' => 'cidade', 'label' => 'Cidade'],
+                ['key' => 'estado', 'label' => 'Estado'], 
+                ['key' => 'is_active', 'label' => 'Status'], 
+                ['key' => 'Ações', 'label' => 'Ações'], 
+            ];
+        @endphp
+ 
+        <x-mary-table :headers="$headers" :rows="$warehouses" striped  >
+            @scope('cell_is_active', $warehouse)
+                <x-mary-badge :value="$warehouse->is_active" class="bg-red" with-pagination />
+            @endscope
+        </x-mary-table>
+    </x-mary-card> -->
 </div>
