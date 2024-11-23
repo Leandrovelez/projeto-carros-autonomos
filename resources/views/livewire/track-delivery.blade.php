@@ -131,6 +131,14 @@
                     
                 </x-mary-card>
             @endif
+            @if($delivery->status == "Entregue")
+                <x-mary-card class="dark:bg-slate-900 mt-4">
+                    <x-mary-header title="Receptor" subtitle="" separator />
+                    <div class=" flex justify-center">
+                        <img src="{{ asset('images/user.jpg') }}" alt="" class="rounded" width="40%" height="auto">
+                    </div>
+                </x-mary-card>
+            @endif
         </div>
         
     </div>
