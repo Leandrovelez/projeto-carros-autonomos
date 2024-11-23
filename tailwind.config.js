@@ -12,7 +12,8 @@ export default {
 		 "./vendor/robsontenorio/mary/src/View/Components/**/*.php",
         './app/Livewire/**/*Table.php',
         './vendor/power-components/livewire-powergrid/resources/views/**/*.php',
-        './vendor/power-components/livewire-powergrid/src/Themes/Tailwind.php'
+        './vendor/power-components/livewire-powergrid/src/Themes/Tailwind.php',
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
 	],
 
     theme: {
