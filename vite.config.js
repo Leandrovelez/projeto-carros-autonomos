@@ -8,4 +8,9 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    resolve: {
+        alias: {
+            'powergrid': './../../vendor/power-components/livewire-powergrid/dist/powergrid',
+        },
+    },
 });
