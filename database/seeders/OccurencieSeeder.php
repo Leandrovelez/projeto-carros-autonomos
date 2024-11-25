@@ -20,6 +20,7 @@ class OccurencieSeeder extends Seeder
             'endereco' => 'rua dos bobos, 0, São Paulo - SP',
             'tipo' => 'Tentativa de arrombamento',
             'entrega_id' => 1,
+            'compartimento' => 1,
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -28,6 +29,7 @@ class OccurencieSeeder extends Seeder
             'endereco' => 'rua dos teste, 220, São Caetano - SP',
             'tipo' => 'Falha no compartimento',
             'entrega_id' => 5,
+            'compartimento' => 5,
             'created_at' => now(),
             'updated_at' => now(),
         ]);

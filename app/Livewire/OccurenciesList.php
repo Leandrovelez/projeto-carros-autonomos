@@ -59,6 +59,10 @@ final class OccurenciesList extends PowerGridComponent
             Column::make('Tipo', 'tipo')
                 ->searchable()
                 ->sortable(),
+            
+            Column::make('Compartimento', 'compartimento')
+                ->searchable()
+                ->sortable(),
                 
             Column::make('Data', 'created_at_formatted')
                 ->searchable()

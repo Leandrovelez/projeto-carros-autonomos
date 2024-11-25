@@ -14,6 +14,9 @@
                             <strong>Data: </strong> 
                         </p>
                         <p class="mt-2">
+                            <strong>Compartimento: </strong> 
+                        </p>
+                        <p class="mt-2">
                             <strong>Tipo: </strong>
                         </p>
                     </div>
@@ -24,6 +27,9 @@
                         </p>
                         <p class="mt-2">
                             {{ Illuminate\Support\Carbon::parse($occurencie->created_at)->format('d/m/Y H:i:s') }}
+                        </p>
+                        <p class="mt-2">
+                            {{ $occurencie->compartimento }}
                         </p>
                         <p class="mt-2">
                             <button class="outline outline-offset-2 outline-red-500 text-red-600 dark:text-red-400 rounded">{{$occurencie->tipo}}</button>

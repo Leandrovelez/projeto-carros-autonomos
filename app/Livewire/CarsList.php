@@ -68,7 +68,7 @@ final class CarsList extends PowerGridComponent
             Column::make('Capacidade de Carga (kg)', 'capacidade_carga_kg')
                 ->searchable()
                 ->sortable(),
-            Column::make('Qtd Compartimento', 'qtd_compartimentos')
+            Column::make('Qtd Compartimentos', 'qtd_compartimentos')
                 ->searchable()
                 ->sortable(),
             Column::make('Autonomia (km)', 'autonomia_km')

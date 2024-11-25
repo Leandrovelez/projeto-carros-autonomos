@@ -44,6 +44,8 @@ final class GaragesList extends PowerGridComponent
         ->add('nome')
         ->add('estado')
         ->add('capacidade')
+        ->add('cidade')
+        ->add('is_active', fn (Garage $model) => $model->is_active ? 'Ativo' : 'Inativo')
         ;
     }
 
