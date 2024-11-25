@@ -1,6 +1,8 @@
 #!/bin/bash
 # Make sure this file has executable permissions, run `chmod +x build-app.sh`
 
+php artisan key:generate
+
 # Build assets using NPM
 npm run build
 
