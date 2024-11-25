@@ -15,12 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('endereco_entrega', 250);
             $table->string('nome_destinatario', 250);
-            $table->integer('garagem_id');
-            $table->integer('armazem_id');
+            $table->unsignedBigInteger('store_id');
+            $table->unsignedBigInteger('car_id')->nullable();
             $table->string('status', 32);
             $table->string('comentario', 250)->nullable();
             $table->integer('compartimento');
             $table->integer('tentativa')->nullable();
+
+            $table->foreign('store_id')->references('id')->on('users');
+            $table->foreign('car_id')->references('id')->on('cars');
             $table->timestamps();
         });
     }

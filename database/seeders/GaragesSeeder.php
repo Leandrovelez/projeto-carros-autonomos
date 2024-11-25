@@ -14,7 +14,7 @@ class GaragesSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('garages')->truncate();
+        //DB::table('garages')->truncate();
 
         Garage::create([
             'nome' => 'Garagem Av PAulista',
@@ -25,7 +25,8 @@ class GaragesSeeder extends Seeder
             'cidade' => 'São paulo',
             'estado' => 'São Paulo',
             'capacidade' => 100,
-            'is_active' => true
+            'is_active' => true,
+            'dono_id' => 3,
         ]);
 
         Garage::create([
@@ -37,7 +38,8 @@ class GaragesSeeder extends Seeder
             'cidade' => 'Santos',
             'estado' => 'São Paulo',
             'capacidade' => 50,
-            'is_active' => true
+            'is_active' => true,
+            'dono_id' => 3,
         ]);
 
         Garage::create([
@@ -49,7 +51,8 @@ class GaragesSeeder extends Seeder
             'cidade' => 'São paulo',
             'estado' => 'São Paulo',
             'capacidade' => 200,
-            'is_active' => true
+            'is_active' => true,
+            'dono_id' => 3,
         ]);
     }
 }

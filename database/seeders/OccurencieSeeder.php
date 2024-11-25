@@ -14,7 +14,7 @@ class OccurencieSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('occurencies')->truncate();
+        //DB::table('occurencies')->truncate();
 
         Occurencie::create([
             'endereco' => 'rua dos bobos, 0, São Paulo - SP',

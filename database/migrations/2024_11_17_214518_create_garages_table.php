@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('estado', 250);
             $table->integer('capacidade');
             $table->boolean('is_active');
+            $table->unsignedBigInteger('dono_id');
+            $table->foreign('dono_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

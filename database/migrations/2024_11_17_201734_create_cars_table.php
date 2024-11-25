@@ -20,6 +20,8 @@ return new class extends Migration
             $table->integer('qtd_compartimentos');
             $table->integer('autonomia_km');
             $table->integer('garagem')->nullable();
+            $table->unsignedBigInteger('dono_id');
+            $table->foreign('dono_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

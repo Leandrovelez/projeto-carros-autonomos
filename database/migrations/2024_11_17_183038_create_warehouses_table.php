@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('cidade', 250);
             $table->string('estado', 250);
             $table->boolean('is_active');
+            $table->unsignedBigInteger('store_id');
+            $table->foreign('store_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class CarsSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('cars')->truncate();
+        //DB::table('cars')->truncate();
         Car::create([
             'fabricante' => 'BMW',
             'modelo' => 'Ix3',
@@ -22,6 +22,7 @@ class CarsSeeder extends Seeder
             'capacidade_carga_kg' => 200,
             'qtd_compartimentos' => 10,
             'autonomia_km' => 350,
+            'dono_id' => 3,
         ]);
         
         Car::create([
@@ -31,6 +32,7 @@ class CarsSeeder extends Seeder
             'capacidade_carga_kg' => 200,
             'qtd_compartimentos' => 10,
             'autonomia_km' => 400,
+            'dono_id' => 3,
         ]);
         
         Car::create([
@@ -40,6 +42,7 @@ class CarsSeeder extends Seeder
             'capacidade_carga_kg' => 200,
             'qtd_compartimentos' => 10,
             'autonomia_km' => 300,
+            'dono_id' => 3,
         ]);
     }
 }

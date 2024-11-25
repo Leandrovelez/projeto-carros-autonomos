@@ -14,7 +14,7 @@ class WarehousesSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('warehouses')->truncate();
+        //DB::table('warehouses')->truncate();
 
         Warehouse::create([
             'nome' => 'Armazém Av PAulista',
@@ -24,6 +24,7 @@ class WarehousesSeeder extends Seeder
             'bairro' => 'Bairro',
             'cidade' => 'São paulo',
             'estado' => 'São Paulo',
+            'store_id' => 2,
             'is_active' => true
         ]);
 
@@ -35,6 +36,7 @@ class WarehousesSeeder extends Seeder
             'bairro' => 'Bairro',
             'cidade' => 'Santos',
             'estado' => 'São Paulo',
+            'store_id' => 2,
             'is_active' => true
         ]);
 
@@ -46,6 +48,7 @@ class WarehousesSeeder extends Seeder
             'bairro' => 'Bairro',
             'cidade' => 'São paulo',
             'estado' => 'São Paulo',
+            'store_id' => 4,
             'is_active' => true
         ]);
     }

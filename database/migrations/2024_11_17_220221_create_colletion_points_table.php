@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('estado', 250);
             $table->string('nome_responsavel', 250);
             $table->boolean('is_active');
+            $table->unsignedBigInteger('store_id');
+            $table->foreign('store_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

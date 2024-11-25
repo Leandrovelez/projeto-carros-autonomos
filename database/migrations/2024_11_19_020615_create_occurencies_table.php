@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('endereco');
             $table->enum('tipo', ['Senha errada', 'Tentativa de arrombamento', 'Falha no compartimento']);
             $table->string('foto_tirada')->nullable();
-            $table->string('entrega_id');
+            $table->unsignedBigInteger('entrega_id');
+            $table->foreign('entrega_id')->references('id')->on('deliveries');
             $table->timestamps();
         });
     }

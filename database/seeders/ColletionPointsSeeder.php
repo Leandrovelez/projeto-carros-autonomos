@@ -14,7 +14,7 @@ class ColletionPointsSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('colletion_points')->truncate();
+        //DB::table('colletion_points')->truncate();
         ColletionPoint::create([
             'nome' => 'Ponto Av PAulista',
             'cep' => '05588-471',
@@ -24,7 +24,8 @@ class ColletionPointsSeeder extends Seeder
             'cidade' => 'São paulo',
             'estado' => 'São Paulo',
             'nome_responsavel' => "Donald",
-            'is_active' => true
+            'is_active' => true,
+            'store_id' => 2,
         ]);
 
         ColletionPoint::create([
@@ -36,7 +37,8 @@ class ColletionPointsSeeder extends Seeder
             'cidade' => 'Santos',
             'estado' => 'São Paulo',
             'nome_responsavel' => "Tio Patinhas",
-            'is_active' => true
+            'is_active' => true,
+            'store_id' => 2,
         ]);
 
         ColletionPoint::create([
@@ -48,7 +50,8 @@ class ColletionPointsSeeder extends Seeder
             'cidade' => 'São paulo',
             'estado' => 'São Paulo',
             'nome_responsavel' => "Duck Dogers",
-            'is_active' => true
+            'is_active' => true,
+            'store_id' => 4,
         ]);
     }
 }
