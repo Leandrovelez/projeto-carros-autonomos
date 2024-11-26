@@ -1,5 +1,15 @@
 <div>
     <x-slot:sidebar drawer="main-drawer" class="bg-base-100 lg:bg-inherit">
+        <!-- Logo -->
+        <div class="shrink-0 flex items-center">
+                    <a href="{{ route('dashboard') }}" wire:navigate>
+                        <div class="flex items-center pt-4 pl-4">
+                            <span class="font-bold text-3xl me-3 bg-gradient-to-r from-green-500 to-emerald-300 bg-clip-text text-transparent ">
+                                QUIK-Y
+                            </span>
+                        </div>
+                    </a>
+                </div>
         {{-- MENU --}}
         <x-mary-menu activate-by-route>
             <img src="" alt="" class="w-12">
