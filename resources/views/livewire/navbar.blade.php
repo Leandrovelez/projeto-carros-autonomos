@@ -77,22 +77,22 @@
             @endif
 
             @if(in_array(Auth::user()->tipo, ['admin', 'vendedor']))
-                <x-mary-menu-item title="Armazéns" link="{{ route('warehouses.index') }}" exact />
-                <x-mary-menu-item title="Pontos de coleta" link="{{ route('collection-point.index') }}" exact />
+                <x-mary-menu-item title="Armazéns" link="{{ route('warehouses.index') }}" exact icon="o-building-storefront"/>
+                <x-mary-menu-item title="Pontos de coleta" link="{{ route('collection-point.index') }}" exact  icon="o-map-pin"/>
             @endif
 
             @if(in_array(Auth::user()->tipo, ['admin', 'dono_de_carros']))
-                <x-mary-menu-item title="Garagens" link="{{ route('garages.index') }}" exact />
-                <x-mary-menu-item title="Carros" link="{{ route('cars.index') }}" exact />
+                <x-mary-menu-item title="Garagens" link="{{ route('garages.index') }}" exact icon="o-building-office"/>
+                <x-mary-menu-item title="Carros" link="{{ route('cars.index') }}" exact icon="o-truck" />
             @endif
             
             @if(Auth::user()->tipo == "admin")
-                <x-mary-menu-item title="Lojas" link="{{ route('stores.index') }}" exact/>
-                <x-mary-menu-item title="Donos de carros" link="{{ route('car-owners.index') }}" exact/>
+                <x-mary-menu-item title="Lojas" link="{{ route('stores.index') }}" exact icon="o-shopping-cart"/>
+                <x-mary-menu-item title="Donos de carros" link="{{ route('car-owners.index') }}" exact icon="o-user"/>
             @endif
             
-            <x-mary-menu-item title="Entregas" link="{{ route('delivery.index') }}" exact/>
-            <x-mary-menu-item title="Ocorrências" link="{{ route('occurencies.index') }}" exact/>
+            <x-mary-menu-item title="Entregas" link="{{ route('delivery.index') }}" exact icon="o-shopping-bag"/>
+            <x-mary-menu-item title="Ocorrências" link="{{ route('occurencies.index') }}" exact icon="o-shield-exclamation"/>
             {{-- Theme toggle --}}
             <x-mary-theme-toggle class="btn btn-circle" />
         </x-mary-menu>
